@@ -1,0 +1,25 @@
+.signin {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: pink;
+	height: 100vh;
+}
+.siginin-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.signin-logo {
+	margin: 10px;
+}
+.signin-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 25px;
+}
