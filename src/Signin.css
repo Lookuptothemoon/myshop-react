@@ -1,9 +1,7 @@
 .signin {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	background-color: pink;
 	height: 100vh;
 }
 .siginin-container {
@@ -14,12 +12,41 @@
 }
 .signin-logo {
 	margin: 10px;
+	color: black;
 }
 .signin-form {
+	background-color: #ffe0e8;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	border: 1px solid black;
 	border-radius: 10px;
 	padding: 25px;
+}
+.signin-form-item {
+	margin: 5px;
+}
+.signin-form input {
+	width: 95%;
+}
+.signin-form-submit {
+	background-color: white;
+	border: 1px solid black;
+	width: 70px;
+	height: 25px;
+	border-radius: 5px;
+}
+.signin-form-submit:hover {
+	background-color: lightgray;
+	cursor: pointer;
+}
+.siginin-signup button {
+	background: none;
+	color: blue;
+	text-decoration: underline;
+	border: none;
+	padding: 0;
+	margin: 0;
+	outline: none;
 }
