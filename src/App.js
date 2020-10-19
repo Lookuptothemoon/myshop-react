@@ -5,9 +5,9 @@ import Footer from './Footer';
 import Home from './Home';
 import Signin from './Signin';
 import Shop from './Shop';
-/*
 import Cart from './Cart';
-import Product from './Product';
+/*
+import Product from './Product/product-id' ???
 */
 import './App.css';
 
@@ -33,7 +33,9 @@ function App() {
                     </Route>
 
                     <Route path="/cart">
-                        <h1>Cart</h1>
+                        <Header />
+                        <Cart />
+                        <Footer />
                     </Route>
 
                     <Route path="/">

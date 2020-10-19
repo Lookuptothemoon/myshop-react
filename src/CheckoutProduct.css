@@ -1,0 +1,21 @@
+.checkout-product {
+	background-color: #f0f0f0;
+	border-radius: 7px;
+	padding: 20px;
+}
+.checkout-product-container {
+	background-color: white;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	height: 150px;
+	width: 100%;
+}
+.checkout-product-col {
+	margin: 0 10px;
+}
+.checkout-product-img {
+	width: 220px;
+	height: 140px;
+	object-fit: contain;
+}

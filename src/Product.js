@@ -3,6 +3,7 @@ import './Product.css';
 import img0 from './imgs/black-shirt.jpg';
 import img1 from './imgs/denim-jeans.jpg';
 import img2 from './imgs/leather-jacket.jpg';
+import defaultImg from './imgs/default-img.png';
 
 function Product({id, price, qnty, name, descr}) {
 	// get img url based on product id
@@ -15,7 +16,10 @@ function Product({id, price, qnty, name, descr}) {
 	return (
 		<div className="product">
 			<div className="product-container">
-				<img className="product-img" src={ imgURLs.find(x => x.id===id).src } alt={descr} />
+				<img className="product-img"
+					src={ imgURLs.find(x => x.id===id) ? imgURLs.find(x => x.id===id).src : defaultImg } 
+					alt={descr}
+				/>
 				<h3>{name}</h3>
 				<p>${ (price/100).toFixed(2) }</p>
 				<button>Add to Cart</button>
