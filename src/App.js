@@ -4,9 +4,8 @@ import Header from './Header';
 import Footer from './Footer';
 import Home from './Home';
 import Signin from './Signin';
-/*
 import Shop from './Shop';
-import Signin from './Signin';
+/*
 import Cart from './Cart';
 import Product from './Product';
 */
@@ -19,7 +18,7 @@ function App() {
                 <Switch>
                     <Route path="/shop">
                         <Header />
-                        <h1>Shop</h1>
+                        <Shop />
                         <Footer />
                     </Route>
 

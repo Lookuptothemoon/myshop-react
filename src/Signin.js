@@ -74,7 +74,6 @@ function Signin() {
         event.preventDefault();
         // TO DO: check if user exists and GET, else return error
         const currUser = getUser(user, users);
-        console.log(currUser);
         if( currUser != null ){
             alert("Hello " + currUser.name );
         }else{
@@ -97,7 +96,6 @@ function Signin() {
 
             alert("added " + user.name);
             console.log(users);
-            console.log(user);
         }
     }
 

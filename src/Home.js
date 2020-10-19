@@ -9,10 +9,10 @@ function Home() {
     return (
         <div className="home">
             <div className="home-header">
-                <img className="home-header-img" src={bannerImg} />
+                <img className="home-header-img" src={bannerImg} alt="header" />
                 <Link className="home-header-link" to="/shop">Check it out</Link>
 
-                <img className="home-header-mobile-img" src={bannerMobileImg} />
+                <img className="home-header-mobile-img" src={bannerMobileImg} alt="header mobile" />
                 <Link className="home-header-mobile-link" to="/shop">Check it out</Link>
             </div>
 
@@ -23,7 +23,7 @@ function Home() {
 
             <div className="home-content">
                 <div className="home-content-section">
-                    <img src="https://wp-en.oberlo.com/wp-content/uploads/2018/08/New-Products.jpg" />
+                    <img src="https://wp-en.oberlo.com/wp-content/uploads/2018/08/New-Products.jpg" alt="bag with heart sunglasses, phone, eyelashes, nail polish, bangle earrings and watch falling out" />
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -47,7 +47,7 @@ function Home() {
                         and more recently with desktop publishing software like Aldus PageMaker including 
                         versions of Lorem Ipsum.
                     </p>
-                    <img src="https://api.time.com/wp-content/uploads/2018/11/sweetfoam-sustainable-product.jpg" />
+                    <img src="https://api.time.com/wp-content/uploads/2018/11/sweetfoam-sustainable-product.jpg" alt="flip flops" />
                 </div>
             </div>
         </div>
