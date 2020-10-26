@@ -34,73 +34,19 @@ function Shop() {
         {
             id: 3,
             index: 3,
-            price: 0,
-            qnty: 0,
-            name: "NULL Product",
-            description: "This is a null product",
+            price: 50,
+            qnty: 1,
+            name: "Default Product",
+            description: "This is a product w/ default img",
             created: "10-10-2020"
         },
         {
             id: 4,
             index: 4,
-            price: 0,
+            price: 150,
             qnty: 0,
-            name: "NULL Product",
-            description: "This is a null product",
-            created: "10-10-2020"
-        },
-        {
-            id: 5,
-            index: 5,
-            price: 0,
-            qnty: 0,
-            name: "NULL Product",
-            description: "This is a null product",
-            created: "10-10-2020"
-        },
-        {
-            id: 6,
-            index: 6,
-            price: 0,
-            qnty: 0,
-            name: "NULL Product",
-            description: "This is a null product",
-            created: "10-10-2020"
-        },
-        {
-            id: 7,
-            index: 7,
-            price: 0,
-            qnty: 0,
-            name: "NULL Product",
-            description: "This is a null product",
-            created: "10-10-2020"
-        },
-        {
-            id: 8,
-            index: 8,
-            price: 0,
-            qnty: 0,
-            name: "NULL Product",
-            description: "This is a null product",
-            created: "10-10-2020"
-        },
-        {
-            id: 9,
-            index: 9,
-            price: 0,
-            qnty: 0,
-            name: "NULL Product",
-            description: "This is a null product",
-            created: "10-10-2020"
-        },
-        {
-            id: 10,
-            index: 10,
-            price: 0,
-            qnty: 0,
-            name: "NULL Product",
-            description: "This is a null product",
+            name: "Null Product",
+            description: "This is a product w/ 0 quantity",
             created: "10-10-2020"
         },
     ]
@@ -114,16 +60,18 @@ function Shop() {
                 <div className="shop-products">
                     {
                         products.map((prod, index) => {
-                            return (
-                                <Product
-                                    key={prod.id}
-                                    id={prod.id}
-                                    price={prod.price}
-                                    qnty={prod.qnty}
-                                    name={prod.name}
-                                    descr={prod.description}
-                                />
-                            )
+                            if(prod.qnty > 0){
+                                return (
+                                    <Product
+                                        key={prod.id}
+                                        id={prod.id}
+                                        price={prod.price}
+                                        qnty={prod.qnty}
+                                        name={prod.name}
+                                        descr={prod.description}
+                                    />
+                                );
+                            }
                         })
                     }
                 </div>

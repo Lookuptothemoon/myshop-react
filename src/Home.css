@@ -1,8 +1,8 @@
 .home {
-	background-color: white;
+	background-color: #ffdddd;
 }
 .home-header {
-	background-color: white;
+	background-color: #ffdddd;
 	position: relative;
 }
 .home-header img {
@@ -17,23 +17,17 @@
 	padding: 10px;
 	border-radius: 7px;
 }
-.home-header-link {
-	font-size: 22px;
-	right: 20%;
-	bottom: 7%;
-	padding: 2vw;
-}
 .home-header-mobile-link {
 	font-size: 14px;
 	left: 55%;
 	bottom: 10%;
 }
 .home-banner {
-	background-color: pink;
+	background-color: gold;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 5vw;
+	padding: 50px;
 }
 .home-banner-link {
 	background-color: orange;

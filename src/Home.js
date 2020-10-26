@@ -10,7 +10,6 @@ function Home() {
         <div className="home">
             <div className="home-header">
                 <img className="home-header-img" src={bannerImg} alt="header" />
-                <Link className="home-header-link" to="/shop">Check it out</Link>
 
                 <img className="home-header-mobile-img" src={bannerMobileImg} alt="header mobile" />
                 <Link className="home-header-mobile-link" to="/shop">Check it out</Link>

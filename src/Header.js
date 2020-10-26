@@ -9,9 +9,6 @@ import $ from 'jquery';
 import './Header.css';
 
 function Header() {
-	// state variables
-	let cart = {length: 0};
-
 	// close modal menu on mobile
 	const closeModal = () => {
 		$(".header-mobile-modal")[0].style.display = "none";
@@ -36,12 +33,12 @@ function Header() {
 	        		<Link to="/" className="header-link header-logo">MyShop</Link>
 	                <Link to="/shop" className="header-desktop-nav-item header-link">Shop</Link>
 	                <Link to="/signin" className="header-desktop-nav-item header-link">Sign In</Link>
-	                <Link to="/cart" className="header-desktop-nav-item"><ShoppingCartIcon className="header-link" />{cart.length}</Link>
+	                <Link to="/cart" className="header-desktop-nav-item"><ShoppingCartIcon className="header-link" /></Link>
                 </div>
 
                 <div className="header-mobile-nav">
 	                <Link to="/" className="header-link header-logo">MyShop</Link>
-	                <Link to="/cart"> <ShoppingCartIcon className="header-link" />{cart.length} </Link>
+	                <Link to="/cart"> <ShoppingCartIcon className="header-link" /></Link>
 	                <button onClick={openModal} className="mobile-trigger"> <MenuIcon className="header-link" /> </button>
                 </div>
 
